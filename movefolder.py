@@ -42,7 +42,7 @@ def main():
         except Exception as e:
             # print(parentpath + str(df[i]) + ":移动异常")
             print(str(ws.cell(i, 1).value) + ":移动异常")
-            dontfind.append(str(ws.cell(i, 1).value))
+            dontfind.append(str(ws.cell(i, 1).value) + ":移动异常")
             print(repr(e))
     if len(dontfind) > 0:
         resultfile = filterfolder + "\\moveresult.xlsx"
